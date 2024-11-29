@@ -6,13 +6,35 @@
     <title>Altschool javascript class activity</title>
 </head>
 <body>
-    
-<form>
-    <input type="text" >
-    <input type="email">
-    <input type="number">
+<form id="registrationForm">
+    <label for="name">
+        Name:
+        <input type="text" name="name"  id="name" placeholder="Name" required minlength="3">
+    </label>
+  
+    <label for="email">
+        Email:
+        <input type="email" placeholder="email" id="email" required >
+    </label>
+ 
+    <label for="number">
+        Age:
+        <input type="number" min="18" max="99"  id="age" required>
+    </label>
+   
+    <label for="gender">
+        Gender
+        <select name="gender"  id="gender">
+            <option value="male">Male</option>
+            <option value="Female">Female</option>
+            <option value="None">None</option>
+        </select>
+    </label>
 
-    <label for="gender"></label>
+    <select name="terms" id="terms">
+        i agree to the terms and condition
+        <input type="checkbox" name="terms" required>
+    </select>
 </form>
 <script src="index.js"></script>
 </body>
